@@ -1,0 +1,101 @@
+.container{
+ display: flex;
+ margin: 20px;
+ gap: 2%;
+align-items: center;
+background-color: gray;
+float: left;
+margin-left: 200px;
+}
+.A{
+    display: flex;
+    
+}
+.B{
+    display: flex;
+    
+}
+.C{
+    display: flex;
+     
+}
+.D{
+    display: flex; 
+    
+}
+@media screen and (max-width: 700px) {
+    .container{
+        display: flex;
+        margin: 20px;
+        gap: 2%;
+       align-items: center;
+       background-color: gray;
+       float: left;
+       
+       }
+    
+    .A{
+        
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .B{
+       
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .C{
+        flex-direction: column; 
+        margin-left: 0;
+    }
+    .D{
+
+        flex-direction: column;
+        margin-left: 0;
+    }
+  }
+  /* ____________________ */
+  .toggle{
+        position: absolute;
+        top: 2rem;
+        left: 4rem;
+        display: none;
+        justify-content: space-between;
+
+        color: white;
+    
+  }
+  @media screen and (max-width: 600px) {
+    .toggle{
+        display: flex;
+        cursor: pointer;
+    }
+    li{
+        width: 100%;
+        display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+            
+    }
+    ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .logo{
+        margin-left: auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lia li a{
+        padding: .5rem 1rem;
+
+    }
+    .lia.active{
+        display: flex;
+    }
+    }
